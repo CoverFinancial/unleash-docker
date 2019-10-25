@@ -2,7 +2,7 @@ FROM node:10-alpine
 
 COPY package.json ./
 
-RUN yarn install --production
+RUN npm install --production
 
 COPY . .
 
