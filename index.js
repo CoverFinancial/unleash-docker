@@ -79,4 +79,9 @@ unleash.start(options)
         await stateService.importFile({file: 'exported-data.json', userName: 'import', dropBeforeImport: false});
       };
     };
+  })
+  .then(instance => {
+    console.log(
+      `Unleash started on http://localhost:${instance.app.get('port')}`,
+    );
   });

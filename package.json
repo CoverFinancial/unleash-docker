@@ -3,7 +3,7 @@
   "description": "Docker images for unleash.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "NODE_ENV=development node index.js",
     "test:ci": "echo 'no tests for unleash-docker';"
   },
   "engines": {
@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@exlinc/keycloak-passport": "^1.0.2",
+    "@exlinc/keycloak-passport": "^1.0.2", d
     "@passport-next/passport": "^3.1.0",
     "@passport-next/passport-google-oauth2": "^1.0.0",
     "basic-auth": "^2.0.1",
