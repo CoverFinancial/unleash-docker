@@ -3,7 +3,7 @@
 const unleash = require('unleash-server');
 const passport = require('@passport-next/passport');
 const GoogleOAuth2Strategy = require('@passport-next/passport-google-oauth2');
-const { googleClientId, googleClientSecret, googleCallbackUrl } = require('./config');
+const { googleClientId, googleClientSecret, googleCallbackUrl, nodeEnv } = require('./config');
 
 passport.use(
   new GoogleOAuth2Strategy(
@@ -70,6 +70,6 @@ const options = {
 
 unleash.start(options).then(instance => {
   console.log(
-    `Unleash started on http://localhost:${instance.app.get('port')}`,
+    `Unleash started on ${nodeEnv}`,
   );
 });

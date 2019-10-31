@@ -3,5 +3,6 @@ const dotenv = require('dotenv').config();
 module.exports = {
   googleClientId: process.env.GOOGLE_CLIENT_ID,
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  googleCallbackUrl: process.env.GOOGLE_CALLBACK_URL
+  googleCallbackUrl: process.env.GOOGLE_CALLBACK_URL,
+  nodeEnv: process.env.NODE_ENV
 };
