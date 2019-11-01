@@ -75,8 +75,8 @@ unleash.start(options)
       const exportedData = await stateService.export({includeStrategies: false, includeFeatureToggles: true});
       await stateService.import({data: exportedData, userName: 'import', dropBeforeImport: false});
 
-      if (fs.existsSync('exported-data.yml')) {
-        await stateService.importFile({file: 'exported-data.yml', userName: 'import', dropBeforeImport: false});
+      if (fs.existsSync('exported-data.json')) {
+        await stateService.importFile({file: 'exported-data.json', userName: 'import', dropBeforeImport: false});
       };
     };
   });

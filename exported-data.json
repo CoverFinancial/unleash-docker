@@ -1,0 +1,717 @@
+{
+  "features": [
+    {
+      "name": "partners_ab_testing_active",
+      "description": "Partners AB Testing",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default",
+          "parameters": {}
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:56:34.727Z"
+    },
+    {
+      "name": "partners_ach_sms_active",
+      "description": "Partners ACH SMS Active",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:13:22.123Z"
+    },
+    {
+      "name": "partners_all_offboarding_active",
+      "description": "Partners All Offboarding",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:41:45.250Z"
+    },
+    {
+      "name": "partners_auto_response_active",
+      "description": "Partners Auto Response",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:14:03.296Z"
+    },
+    {
+      "name": "partners_build_clearcover_candidates",
+      "description": "Partners Build Clearcover Candidates",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:58:52.772Z"
+    },
+    {
+      "name": "partners_build_cover_candidates",
+      "description": "Partners Build Cover Candidates",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:38:55.864Z"
+    },
+    {
+      "name": "partners_clear_channel_worker",
+      "description": "Partners Clear Channel Worker",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:45:25.004Z"
+    },
+    {
+      "name": "partners_clearcover_active",
+      "description": "Partners Clearcover",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default",
+          "parameters": {}
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:57:47.604Z"
+    },
+    {
+      "name": "partners_cover_active",
+      "description": "Partners Cover",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:58:27.600Z"
+    },
+    {
+      "name": "partners_coverage_verifier",
+      "description": "Partners Coverage Verifier",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:12:14.211Z"
+    },
+    {
+      "name": "partners_dialog_flow_v2_active",
+      "description": "Partners Dialog Flow V2",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:45:08.857Z"
+    },
+    {
+      "name": "partners_disable_android_emails",
+      "description": "Partners Disable Android Emails",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:02:41.543Z"
+    },
+    {
+      "name": "partners_disable_ios_emails",
+      "description": "Partners Disable iOS Emails",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:02:17.019Z"
+    },
+    {
+      "name": "partners_dynamic_sms_delay_active",
+      "description": "Partners Dynamic SMS Delay",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:09:28.966Z"
+    },
+    {
+      "name": "partners_emergency_banner_active",
+      "description": "Partners Emergency Banner",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:38:38.506Z"
+    },
+    {
+      "name": "partners_enable_agent_binding",
+      "description": "Partners Enable Agent Binding",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:43:06.964Z"
+    },
+    {
+      "name": "partners_enable_verisk_for_wizardflow",
+      "description": "Partners Enable Verisk For Wizardflow",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:39:56.438Z"
+    },
+    {
+      "name": "partners_ez_lynx_auto_active",
+      "description": "Partners EZ Lynx Auto",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default",
+          "parameters": {}
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:52:43.513Z"
+    },
+    {
+      "name": "partners_ez_lynx_home_active",
+      "description": "Partners EZ Lynx Home",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default",
+          "parameters": {}
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:53:13.608Z"
+    },
+    {
+      "name": "partners_full_contact_active",
+      "description": "Partners Full Contact",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:44:07.415Z"
+    },
+    {
+      "name": "partners_home_owners_assumptions",
+      "description": "Partners Home Owners Assumptions",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:11:27.738Z"
+    },
+    {
+      "name": "partners_insurance_card_active",
+      "description": "Partners Insurance Card",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:42:49.637Z"
+    },
+    {
+      "name": "partners_intent_lead_score_active",
+      "description": "Partners Intent Lead Score",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:38:01.354Z"
+    },
+    {
+      "name": "partners_lead_scoring_active",
+      "description": "Partners Lead Scoring",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:01:24.983Z"
+    },
+    {
+      "name": "partners_multi_policy_discount",
+      "description": "Partners Multi Policy Discount",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:11:55.996Z"
+    },
+    {
+      "name": "partners_new_salesforce_model_active",
+      "description": "Partners New Salesforce Model",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:13:42.199Z"
+    },
+    {
+      "name": "partners_new_slack_notification_active",
+      "description": "Partners New Slack Notification",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:40:36.292Z"
+    },
+    {
+      "name": "partners_offboarding_under_21_active",
+      "description": "Partners Offboarding Under 21",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:42:10.424Z"
+    },
+    {
+      "name": "partners_opportunity_activity_active",
+      "description": "Partners Opportunity Activity",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:37:46.828Z"
+    },
+    {
+      "name": "partners_packages",
+      "description": "Partners Packages",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:40:51.590Z"
+    },
+    {
+      "name": "partners_pitch_and_ditch_closed_lost",
+      "description": "Partners Pitch and Ditch Closed Lost",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:44:32.544Z"
+    },
+    {
+      "name": "partners_pitch_boost_active",
+      "description": "Partners Pitch Boost",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:45:39.707Z"
+    },
+    {
+      "name": "partners_plaid_income_active",
+      "description": "Partners Plaid Income",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:46:36.923Z"
+    },
+    {
+      "name": "partners_price_notification_sms_active",
+      "description": "Partners Price Notification SMS",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:59:58.982Z"
+    },
+    {
+      "name": "partners_qa_enabled",
+      "description": "Partners QA Enabled",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:41:29.287Z"
+    },
+    {
+      "name": "partners_referral_aws_rewards_active",
+      "description": "Partners Referral AWS Rewards",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:39:35.348Z"
+    },
+    {
+      "name": "partners_retrieve_plaid_income",
+      "description": "Partners Retrieve Plaid Income",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:45:58.358Z"
+    },
+    {
+      "name": "partners_run_clue",
+      "description": "Partners Run Clue",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:41:07.822Z"
+    },
+    {
+      "name": "partners_salesforce_active",
+      "description": "Partners Salesforce",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default",
+          "parameters": {}
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T15:17:44.054Z"
+    },
+    {
+      "name": "partners_save_merlin_predictions",
+      "description": "Partners Save Merlin Predictions",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:43:50.100Z"
+    },
+    {
+      "name": "partners_send_webhooks_to_analytics_app",
+      "description": "Partners Send Webhooks to Analytics App",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:46:21.260Z"
+    },
+    {
+      "name": "partners_skip_apt_number_check",
+      "description": "Partners Skip Apt Number Check",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:10:08.717Z"
+    },
+    {
+      "name": "partners_skip_opportunity_streaming",
+      "description": "Partners Skip Opportunity Streaming",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:43:30.465Z"
+    },
+    {
+      "name": "partners_skip_sms_sent_checks",
+      "description": "Partners Skip SMS Sent Checks",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:03:02.379Z"
+    },
+    {
+      "name": "partners_sms_drip_campaign_active",
+      "description": "Partners SMS Drip Campaign",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:03:58.179Z"
+    },
+    {
+      "name": "partners_sms_followup_campaign_active",
+      "description": "Partners SMS Followup Campaign",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:06:53.586Z"
+    },
+    {
+      "name": "partners_sms_photo_reminder_campaign_active",
+      "description": "Partners SMS Photo Reminder Campaign",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:07:15.656Z"
+    },
+    {
+      "name": "partners_swyfft_active",
+      "description": "Partners Swyfft",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:09:48.869Z"
+    },
+    {
+      "name": "partners_sync_lead_contact_by_restforce",
+      "description": "Partners Sync Lead Contact by Restforce",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:42:31.655Z"
+    },
+    {
+      "name": "partners_twilio_flex_active",
+      "description": "Partners Twilio Flex",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:38:20.160Z"
+    },
+    {
+      "name": "partners_upsell_swyfft_home",
+      "description": "Partners Upsell Swyfft Home",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:14:19.909Z"
+    },
+    {
+      "name": "partners_vehicle_camera_tile",
+      "description": "Partners Vehicle Camera Tile",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:39:14.018Z"
+    },
+    {
+      "name": "partners_wizard_auto_asset_sync_active",
+      "description": "Partners Wizard Auto Asset Sync",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:40:18.432Z"
+    },
+    {
+      "name": "partners_wizard_auto_quoting_active",
+      "description": "Partners Wizard Auto Quoting",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:14:38.763Z"
+    },
+    {
+      "name": "partners_wizard_home_quoting_active",
+      "description": "Partners Wizard Home Quoting",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:15:02.298Z"
+    },
+    {
+      "name": "partners_wizard_jewelry_quoting_active",
+      "description": "Partners Wizard Jewelry Quoting",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:16:23.689Z"
+    },
+    {
+      "name": "partners_wizard_other_quoting_active",
+      "description": "Partners Wizard Other Quoting",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:16:03.586Z"
+    },
+    {
+      "name": "partners_wizard_pet_quoting_active",
+      "description": "Partners Wizard Pet Quoting",
+      "enabled": false,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:15:47.009Z"
+    },
+    {
+      "name": "partners_wizard_renters_quoting_active",
+      "description": "Partners Wizard Renters Quoting",
+      "enabled": true,
+      "strategies": [
+        {
+          "name": "default"
+        }
+      ],
+      "variants": null,
+      "createdAt": "2019-10-29T16:15:28.831Z"
+    }
+  ]
+}
