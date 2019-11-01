@@ -31,14 +31,14 @@ features:
   createdAt: '2019-10-29T16:14:03.296Z'
 - name: partners_build_clearcover_candidates
   description: Partners Build Clearcover Candidates
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T15:58:52.772Z'
 - name: partners_build_cover_candidates
   description: Partners Build Cover Candidates
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -60,7 +60,7 @@ features:
   createdAt: '2019-10-29T15:57:47.604Z'
 - name: partners_cover_active
   description: Partners Cover
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -116,7 +116,7 @@ features:
   createdAt: '2019-10-29T16:43:06.964Z'
 - name: partners_enable_verisk_for_wizardflow
   description: Partners Enable Verisk For Wizardflow
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -153,7 +153,7 @@ features:
   createdAt: '2019-10-29T16:11:27.738Z'
 - name: partners_insurance_card_active
   description: Partners Insurance Card
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -181,7 +181,7 @@ features:
   createdAt: '2019-10-29T16:11:55.996Z'
 - name: partners_new_salesforce_model_active
   description: Partners New Salesforce Model
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -237,14 +237,14 @@ features:
   createdAt: '2019-10-29T16:46:36.923Z'
 - name: partners_price_notification_sms_active
   description: Partners Price Notification SMS
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T15:59:58.982Z'
 - name: partners_qa_enabled
   description: Partners QA Enabled
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -265,14 +265,14 @@ features:
   createdAt: '2019-10-29T16:45:58.358Z'
 - name: partners_run_clue
   description: Partners Run Clue
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:41:07.822Z'
 - name: partners_salesforce_active
   description: Partners Salesforce
-  enabled: false
+  enabled: true
   strategies:
   - name: default
     parameters: {}
@@ -294,7 +294,7 @@ features:
   createdAt: '2019-10-29T16:46:21.260Z'
 - name: partners_skip_apt_number_check
   description: Partners Skip Apt Number Check
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -308,14 +308,14 @@ features:
   createdAt: '2019-10-29T16:43:30.465Z'
 - name: partners_skip_sms_sent_checks
   description: Partners Skip SMS Sent Checks
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:03:02.379Z'
 - name: partners_sms_drip_campaign_active
   description: Partners SMS Drip Campaign
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -350,7 +350,7 @@ features:
   createdAt: '2019-10-29T16:42:31.655Z'
 - name: partners_twilio_flex_active
   description: Partners Twilio Flex
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -364,35 +364,35 @@ features:
   createdAt: '2019-10-29T16:14:19.909Z'
 - name: partners_vehicle_camera_tile
   description: Partners Vehicle Camera Tile
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:39:14.018Z'
 - name: partners_wizard_auto_asset_sync_active
   description: Partners Wizard Auto Asset Sync
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:40:18.432Z'
 - name: partners_wizard_auto_quoting_active
   description: Partners Wizard Auto Quoting
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:14:38.763Z'
 - name: partners_wizard_home_quoting_active
   description: Partners Wizard Home Quoting
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:15:02.298Z'
 - name: partners_wizard_jewelry_quoting_active
   description: Partners Wizard Jewelry Quoting
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
@@ -413,9 +413,8 @@ features:
   createdAt: '2019-10-29T16:15:47.009Z'
 - name: partners_wizard_renters_quoting_active
   description: Partners Wizard Renters Quoting
-  enabled: false
+  enabled: true
   strategies:
   - name: default
   variants:
   createdAt: '2019-10-29T16:15:28.831Z'
-strategies: []
