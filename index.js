@@ -4,6 +4,7 @@ const unleash = require('unleash-server');
 const passport = require('@passport-next/passport');
 const GoogleOAuth2Strategy = require('@passport-next/passport-google-oauth2');
 const { googleClientId, googleClientSecret, googleCallbackUrl, nodeEnv } = require('./config');
+const fs = require("fs");
 
 passport.use(
   new GoogleOAuth2Strategy(
@@ -68,8 +69,14 @@ const options = {
   preRouterHook: googleAdminAuth,
 };
 
-unleash.start(options).then(instance => {
-  console.log(
-    `Unleash started on ${nodeEnv}`,
-  );
-});
+unleash.start(options)
+  .then(async ({ stateService }) => {
+    if (nodeEnv == 'development') {
+      const exportedData = await stateService.export({includeStrategies: false, includeFeatureToggles: true});
+      await stateService.import({data: exportedData, userName: 'import', dropBeforeImport: false});
+
+      if (fs.existsSync('exported-data.yml')) {
+        await stateService.importFile({file: 'exported-data.yml', userName: 'import', dropBeforeImport: false});
+      };
+    };
+  });
