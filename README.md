@@ -1,3 +1,14 @@
+## Setup Unleash for Cover Partners locally
+
+Unleash is used to control feature flags. In order to use feature flags locally you need to have Unleash running. This guide assumes you have Docker installed locally.
+
+1. Clone the unleash-docker repo locally `git@github.com:CoverFinancial/unleash-docker.git`
+2. Change directory to `unleash-docker`
+3. Create a `.env` file in the `unleash-docker` directory and add the environment variables from this [document](https://drive.google.com/file/d/1hjniiRi1HXD3CUPMMIcpsg7_h4m3KOrL/view)
+4. `docker-compose build`
+5. `docker-compose up`
+6. Visit http://localhost:4242 to ensure application is running.
+
 ## Use this image
 
 We have published this image on docker-hub. 
