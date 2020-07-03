@@ -5,7 +5,12 @@ services:
     ports:
       - "4242:4242"
     environment:
-      DATABASE_URL: postgres://postgres:unleash@db/postgres
+      DATABASE_USERNAME: 'postgres'
+      DATABASE_PASSWORD: 'unleash'
+      DATABASE_HOST: 'db'
+      DATABASE_PORT: 5432
+      DATABASE_NAME: 'postgres'
+      DATABASE_SSL: 'false'
     depends_on:
       - db
     command: > 
