@@ -67,6 +67,14 @@ const options = {
   enableLegacyRoutes: false,
   adminAuthentication: 'custom',
   preRouterHook: googleAdminAuth,
+  db: {
+    user: process.env.DATABASE_USERNAME,
+    password: process.env.DATABASE_PASSWORD,
+    host: process.env.DATABASE_HOST,
+    port: process.env.DATABASE_PORT || 5432,
+    database: process.env.DATABASE_NAME || 'unleash',
+    ssl: process.env.DATABASE_SSL == 'true' // only use ssl if the env var == 'true'
+  }
 };
 
 unleash.start(options)
@@ -79,9 +87,4 @@ unleash.start(options)
         await stateService.importFile({file: 'exported-data.json', userName: 'import', dropBeforeImport: false});
       };
     };
-  })
-  .then(instance => {
-    console.log(
-      `Unleash started on http://localhost:${instance.app.get('port')}`,
-    );
   });

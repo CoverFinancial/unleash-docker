@@ -5,9 +5,16 @@ Unleash is used to control feature flags. In order to use feature flags locally 
 1. Clone the unleash-docker repo locally `git@github.com:CoverFinancial/unleash-docker.git`
 2. Change directory to `unleash-docker`
 3. Create a `.env` file in the `unleash-docker` directory and add the environment variables from this [document](https://drive.google.com/file/d/1hjniiRi1HXD3CUPMMIcpsg7_h4m3KOrL/view)
-4. `docker-compose build`
-5. `docker-compose up`
-6. Visit http://localhost:4242 to ensure application is running.
+4. Set the following Database ENV Vars (already provided in docker-compose already, set manually on Heroku Config for cloud deploy)
+    - DATABASE_USERNAME (match to the value in the attached Heroku db instance, see DATABASE_URL env var)
+    - DATABASE_PASSWORD (match to the value in the attached Heroku db instance, see DATABASE_URL env var)
+    - DATABASE_HOST (match to the value in the attached Heroku db instance, see DATABASE_URL env var)
+    - DATABASE_PORT (defaults to 5432 if not set)
+    - DATABASE_NAME (defaults to 'unleash' if not set)
+    - DATABASE_SSL (must equal 'true' to use ssl)
+5. `docker-compose build`
+6. `docker-compose up`
+7. Visit http://localhost:4242 to ensure application is running.
 
 ## Use this image
 
