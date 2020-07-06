@@ -12,6 +12,7 @@ Unleash is used to control feature flags. In order to use feature flags locally 
     - DATABASE_PORT (defaults to 5432 if not set)
     - DATABASE_NAME (defaults to 'unleash' if not set)
     - DATABASE_SSL (must equal 'true' to use ssl)
+    - NODE_TLS_REJECT_UNAUTHORIZED=0 (Only required when DATABASE_SSL is set to true on Heroku)
 5. `docker-compose build`
 6. `docker-compose up`
 7. Visit http://localhost:4242 to ensure application is running.
