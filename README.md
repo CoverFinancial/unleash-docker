@@ -17,6 +17,36 @@ Unleash is used to control feature flags. In order to use feature flags locally 
 6. `docker-compose up`
 7. Visit http://localhost:4242 to ensure application is running.
 
+## Deployment Process Steps
+Unleash does not have auto deployments set up on merge to master.  It is also using Heroku's container stack environment.
+
+1. Check out `master` branch.
+2. Ensure the image can be built: `docker-compose build`.
+3. Build the image and push to our container registry on Heroku: `heroku container:push web -a cover-unleash-<env>`. Note that `web` is the name of the app built in the `docker-compsose.yml` file.
+4. Release the new container into the environment: `heroku container:release web -a cover-unleash-<env>`.
+5. Validate that the app is still running fine via the logs `heroku logs -t -a cover-unleash-<env>`.
+
+## Database Upgrade Process Steps
+This likely will not need to be done again but the steps are documented here in case they are needed:
+
+1. Take a backup of the database: `heroku pg:backups:capture -a cover-unleash-<env>`
+2. Create a new database to promote later: `heroku addons:create heroku-postgresql:standard-0 --app cover-unleash-<env>`.
+3. Wait until you are given confirmation that the database was create successfully: `heroku pg:wait --app cover-unleash-<env>`.
+4. Get the title of the new non-primary database, it will be the second instance in the list returned by `heroku pg:info -a cover-unleash-<env>`. Example db title: "HEROKU_POSTGRESQL_PUCE_URL"
+5. Retrieve the credentials info for the new database with `heroku pg:credentials:url <db title from step 4>  -a cover-unleash-<env>`.
+6. From the data returned in step 5, fill in *BUT DO NOT RUN* this `heroku config:set` command template to set the appropriate environment variables for connection to the database.
+```
+heroku config:set DATABASE_HOST=<NEW DB HOST> DATABASE_NAME=<NEW DB NAME> DATABASE_PASSWORD=<NEW DB PASSWORD> DATABASE_USERNAME=<NEW DB USERNAME> NODE_TLS_REJECT_UNAUTHORIZED=0 -a cover-unleash-<env>
+```
+7. Put the app in maintenance mode `heroku maintenance:on --app cover-unleash-<env>`. It is best to perform the remaining steps in off peak hours and let your team know about a couple mins of downtime.
+8. Perform a copy of the data from the existing database to the new one: `heroku pg:copy DATABASE_URL <db title from step 4> -a cover-unleash-<env>`
+9. Run the `heroku config:set` command you put together in step 6 to set the variables.
+10. Promote the new database to be the primary database `heroku pg:promote <db title from step 4> -a cover-unleash-<env>`.
+11. Confirm that the new database is the primary and the old database is now the second instance in the list returned by `heroku pg:info -a cover-unleash-<env>`
+12. Turn off maintenance mode for the app `heroku maintenance:off --app cover-unleash-<env>`
+13. Validate that the app is still running fine via the logs `heroku logs -t -a cover-unleash-<env>`.  If there is an issue, put the app back in maintenance mode and repromote the old database with its original database env vars.
+14. If appropriate, you can now remove the old database if it has costs.  It may be best to wait a week to ensure you don't need it.  Use `heroku addons:destroy <old db title> -a cover-unleash-<env>`
+
 ## Use this image
 
 We have published this image on docker-hub. 
